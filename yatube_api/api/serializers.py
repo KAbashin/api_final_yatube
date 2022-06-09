@@ -8,7 +8,7 @@ from posts.models import Comment, Follow, Group, Post, User
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
-        fields = ('id', 'title', 'slug', 'description')
+        fields = '__all__'
 
 
 class CommentSerializer(serializers.ModelSerializer):
